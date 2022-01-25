@@ -1,0 +1,60 @@
+.benefits{
+    display: flex;
+}
+.benefit{
+    text-align: center;
+}
+.benefit__image-wrapper{
+   
+    width: 128px;
+    height: 128px;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 14px; ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefit-img{
+    width: 68px;
+    height: 68px;
+}
+.benefits__item{
+    position: relative;
+    flex: 1;
+    padding: 0 3%;
+    &:first-child{
+        padding-left: 0;
+    }
+    &:last-child{
+        padding-right: 0;
+        &:before{
+            display: none;
+        }
+    }
+    &:before{
+        content: url(../../content/benefits/points.png);
+        position: absolute;
+        top: 58px;
+        right: 0;
+        transform: translateX(50%);
+    }
+}
+.benefit__title{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+.benefit__desc{
+    padding: 0 17px;
+    margin-bottom: 64px;
+}
+.benefit__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+   

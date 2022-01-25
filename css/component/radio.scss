@@ -1,0 +1,48 @@
+.radio{
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    &__checkbox{
+        .radio__visible{
+            border-radius: 0px;
+            &::before{
+                background: url('../../content/vi.svg') center no-repeat;
+            }
+        }
+
+    }
+}
+.radio__elem{
+    display: none;
+    &:checked ~ .radio__visible{
+        &::before{
+            display: block;
+        }
+    }
+
+    
+}
+.radio__visible{
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    &::before{
+        display: none;
+        content: "";
+        width: 14px;
+        height: 14px;
+        background:#E01F3D;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.radio__title{
+    margin-right: 16px;
+    margin-bottom: 24px;
+}

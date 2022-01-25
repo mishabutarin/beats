@@ -1,0 +1,22 @@
+.section{
+    height: 100vh;
+    min-height: 652px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+
+}
+.section__main-title{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.section__title-desc{
+    margin-bottom: 62px;
+    color: #666666;
+  padding: 0 22%;
+}
